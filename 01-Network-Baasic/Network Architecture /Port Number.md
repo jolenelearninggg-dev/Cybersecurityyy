@@ -10,13 +10,15 @@
  
 ### 📊 II. 埠號的分類、協議與範圍
 1. 埠號的兩種協議類型 (TCP vs. UDP)
+   >TCP (Transmission Control Protocol) 和 UDP (User Datagram Protocol) 是網路傳輸層最重要的兩種協議。它們的根本區別在於對待「資料傳輸可靠性」的態度不同，因此適用於完全不同的網路應用場景。
+   
    埠號分為兩大類，每一類都有 $65,535$ 個埠號：
    | 協議 | 類型 | 特點 | 適用場景 |
    | ---- | ----| ---- | ------- |
    | TCP (Transmission Control Protocol) | 連線導向 (Connection-oriented) | 必須先透過 「三次握手 (Handshake)」 建立連線才能傳輸資料。提供可靠性、錯誤修正和保證資料傳輸順序。 | 網頁 (HTTP/HTTPS)、電子郵件 (SMTP)、檔案傳輸 (FTP)。 |
    | UDP (User Datagram Protocol) | 無連線模式 (Connectionless) | 無需握手，直接發送資料。不保證資料傳輸的可靠性或順序。 | 對延遲敏感的應用程式，如 DNS 解析、串流媒體、線上遊戲。 |
    
-2. 埠號的三大範圍
+3. 埠號的三大範圍
    埠號範圍從 0 到 65535，被 IANA (網際網路號碼分配局) 分為三個區段：
    | 範圍 | 名稱 | 說明 |
    | ---- | ----| ---- |
